@@ -9,6 +9,9 @@ const createTuit = (req, res) => {
   newTuit.dislikes = 0;
   newTuit.liked = false;
   newTuit.disliked = false;
+  newTuit.username = "NASA";
+  newTuit.handle = "@nasa";
+  newTuit.image = "nasa.png";
   tuits.push(newTuit);
   res.json(newTuit);
 };
